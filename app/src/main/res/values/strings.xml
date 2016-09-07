@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Life Saver</string>
+    <string name="button_new_activity">Open new activity</string>
+    <string name="emergency_call">Call Lifeline</string>
+    <string name="d_name">John Doe</string>
+    <string name="d_phone">7783868404</string>
+    <string name="d_email">jane.spry@uwa.edu.au</string>
+    <string name="d_address">2 Park Road</string>
+    <string name="d_distance">1.96km</string>
+
+    <string-array name="prof_list">
+        <item>Adam Jensen</item>
+        <item>Peter Parker</item>
+        <item>Jack Joyce</item>
+        <item>John 117</item>
+        <item>Trevor Philips </item>
+        <item>Micheal Townley</item>
+        <item>Franklin Clinton</item>
+        <item>John Doe</item>
+        <item>Amanda De Santa</item>
+        <item>Martin Madrazo</item>
+    </string-array>
+    <string-array name="Distance">
+        <item>0.56km</item>
+        <item>1.20km</item>
+        <item>3.14km</item>
+        <item>10.12km</item>
+        <item>19.99km</item>
+    </string-array>
+
+</resources>

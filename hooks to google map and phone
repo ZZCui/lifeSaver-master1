@@ -1,0 +1,34 @@
+/**
+     * open google map application
+     * @param uri
+     * @return if open successfully return true, otherwise return false
+     */
+    private boolean openActivity(String uri){
+        try {
+            Uri intentUri = Uri.parse("geo:37.7749,-122.4194");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            if(mapIntent.resolveActivity(getPackageManager())!=null)
+                startActivity(mapIntent);
+            return true;
+        }
+        catch(Exception e){
+
+        }
+        return false;
+    }
+
+    /**
+     * dial phone number of professor.
+     * @param phoneNumber the phone number of a professor
+     * @return return true if dial successfully, otherwise return false
+     */
+    private boolean dialNumber(String phoneNumber){
+        Intent intentDial=new Intent(Intent.ACTION_DIAL);
+        intentDial.setData(Uri.parse("tel:"+phoneNumber));
+        if(intentDial.resolveActivity(getPackageManager())!=null){
+            startActivity(intentDial);
+            return true;
+        }
+        return false;
+    }
